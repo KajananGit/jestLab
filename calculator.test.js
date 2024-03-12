@@ -174,6 +174,12 @@ describe('even', () => {
     expect(actual).toBe(expected);
   });
 
+  test('is decimal number even', () => {
+    expected = "not even!";
+    actual = even(2.8);
+    expect(actual).toBe(expected);
+  });
+
 });
 
 describe('odd', () => {
