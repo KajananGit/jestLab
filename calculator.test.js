@@ -128,6 +128,12 @@ describe('modulus', () => {
     expect(actual).toBe(expected);
   });
 
+  test('can find reminder when dividing two negative numbers', () => {
+    expected = -0;
+    actual = modulus (-10, -2);
+    expect(actual).toBe(expected);
+  });
+
 });
 
 describe('even', () => {
