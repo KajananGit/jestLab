@@ -4,8 +4,7 @@ const {
   multiply,
   divide,
   modulus,
-  even,
-  odd,
+  evenOrOdd
 } = require("./calculator");
 
 describe('sum', () => { 
@@ -148,70 +147,44 @@ describe('modulus', () => {
 
 });
 
-describe('even', () => {
+describe('evenOrOdd', () => {
 
   test('is even', () => {
     expected = "is even!";
-    actual = even(2);
-    expect(actual).toBe(expected);
-  });
-
-  test('is not even', () => {
-    expected = "not even!";
-    actual = even(3);
+    actual = evenOrOdd(2);
     expect(actual).toBe(expected);
   });
 
   test('is zero even', () => {
     expected = "is even!";
-    actual = even(0);
+    actual = evenOrOdd(0);
     expect(actual).toBe(expected);
   });
 
   test('negative number is even', () => {
     expected = "is even!";
-    actual = even(-2);
+    actual = evenOrOdd(-2);
     expect(actual).toBe(expected);
   });
 
-  test('is decimal number even', () => {
-    expected = "not even!";
-    actual = even(2.8);
+  test('decimal number is odd', () => {
+    expected = "is odd!";
+    actual = evenOrOdd(2.8);
     expect(actual).toBe(expected);
   });
-
-});
-
-describe('odd', () => {
 
   test('is odd', () => {
     expected = "is odd!";
-    actual = odd(3);
-    expect(actual).toBe(expected);
-  });
-
-  test('is not odd', () => {
-    expected = "not odd!";
-    actual = odd(10);
-    expect(actual).toBe(expected);
-  });
-
-  test('is zero odd', () => {
-    expected = "not odd!";
-    actual = odd(0);
+    actual = evenOrOdd(3);
     expect(actual).toBe(expected);
   });
 
   test('negative number is odd', () => {
     expected = "is odd!";
-    actual = odd(-15);
+    actual = evenOrOdd(-15);
     expect(actual).toBe(expected);
   });
 
-  test('is decimal number odd', () => {
-    expected = "is odd!";
-    actual = odd(2.8);
-    expect(actual).toBe(expected);
-  });
+});  
 
-});
+

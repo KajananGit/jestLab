@@ -10,21 +10,15 @@ const divide = (a, b) => a / b;
 
 const modulus = (a, b) => a % b;
 
-const even = function(a){
+const evenOrOdd = function(a){
     if (a % 2 == 0){
         return `is even!`;
     } else {
-        return `not even!`;
+        return `is odd!`;
     }
 };
 
-const odd = function(a) {
-    if (a % 2 != 0){
-        return `is odd!`;
-    } else {
-        return `not odd!`;
-    };
-}
+
 
 module.exports = { 
     sum, 
@@ -32,6 +26,5 @@ module.exports = {
     multiply, 
     divide, 
     modulus, 
-    even, 
-    odd 
+    evenOrOdd 
 };
