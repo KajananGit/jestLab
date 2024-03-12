@@ -150,11 +150,17 @@ describe('modulus', () => {
 
 describe('even', () => {
 
-  // test('is even', () => {
-  //   expected = "2, is even";
-  //   actual = even(2);
-  //   expect(actual).toBe(expected);
-  // });
+  test('is even', () => {
+    expected = "is even!";
+    actual = even(2);
+    expect(actual).toBe(expected);
+  });
+
+  test('is not even', () => {
+    expected = "not even!";
+    actual = even(3);
+    expect(actual).toBe(expected);
+  });
 
 });
 
