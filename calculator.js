@@ -18,7 +18,13 @@ const even = function(a){
     }
 };
 
-const odd = null;
+const odd = function(a) {
+    if (a % 2 != 0){
+        return `is odd!`;
+    } else {
+        return `not odd!`;
+    };
+}
 
 module.exports = { 
     sum, 

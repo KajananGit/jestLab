@@ -162,6 +162,12 @@ describe('even', () => {
     expect(actual).toBe(expected);
   });
 
+  test('is zero even', () => {
+    expected = "is even!";
+    actual = even(0);
+    expect(actual).toBe(expected);
+  });
+
 });
 
 describe('odd', () => {
