@@ -140,6 +140,12 @@ describe('modulus', () => {
     expect(actual).toBe(expected);
   });
 
+  test('can find reminder when dividing to large positive numbers', () => {
+    expected = 1;
+    actual = modulus (1000000, 3);
+    expect(actual).toBe(expected);
+  });
+
 });
 
 describe('even', () => {
