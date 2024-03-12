@@ -196,4 +196,10 @@ describe('odd', () => {
     expect(actual).toBe(expected);
   });
 
+  test('is zero odd', () => {
+    expected = "not odd!";
+    actual = odd(0);
+    expect(actual).toBe(expected);
+  });
+
 });
