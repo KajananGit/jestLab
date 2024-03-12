@@ -123,8 +123,8 @@ describe('divide', () => {
 describe('modulus', () => {
 
   test('can find reminder when dividing two positive numbers', () => {
-    expected = 7.5;
-    actual = divide (15, 2);
+    expected = 1;
+    actual = modulus (15, 2);
     expect(actual).toBe(expected);
   });
 
