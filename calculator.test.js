@@ -134,6 +134,12 @@ describe('modulus', () => {
     expect(actual).toBe(expected);
   });
 
+  test('can find reminder when dividing by zero', () => {
+    expected = NaN;
+    actual = modulus (15, 0);
+    expect(actual).toBe(expected);
+  });
+
 });
 
 describe('even', () => {
