@@ -134,9 +134,8 @@ describe('modulus', () => {
   });
 
   test('can find reminder when dividing by zero', () => {
-    expected = NaN;
     actual = modulus (15, 0);
-    expect(actual).toBe(expected);
+    expect(actual).toBeNaN();
   });
 
   test('can find reminder when dividing to large positive numbers', () => {
