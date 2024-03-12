@@ -168,6 +168,12 @@ describe('even', () => {
     expect(actual).toBe(expected);
   });
 
+  test('negative number is even', () => {
+    expected = "is even!";
+    actual = even(-2);
+    expect(actual).toBe(expected);
+  });
+
 });
 
 describe('odd', () => {
