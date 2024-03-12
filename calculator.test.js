@@ -202,4 +202,10 @@ describe('odd', () => {
     expect(actual).toBe(expected);
   });
 
+  test('negative number is odd', () => {
+    expected = "is odd!";
+    actual = odd(-15);
+    expect(actual).toBe(expected);
+  });
+
 });
