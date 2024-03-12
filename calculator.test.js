@@ -208,4 +208,10 @@ describe('odd', () => {
     expect(actual).toBe(expected);
   });
 
+  test('is decimal number odd', () => {
+    expected = "is odd!";
+    actual = odd(2.8);
+    expect(actual).toBe(expected);
+  });
+
 });
