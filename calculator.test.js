@@ -184,4 +184,10 @@ describe('even', () => {
 
 describe('odd', () => {
 
+  test('is odd', () => {
+    expected = "is odd!";
+    actual = odd(3);
+    expect(actual).toBe(expected);
+  });
+
 });
