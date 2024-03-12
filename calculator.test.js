@@ -190,4 +190,10 @@ describe('odd', () => {
     expect(actual).toBe(expected);
   });
 
+  test('is not odd', () => {
+    expected = "not odd!";
+    actual = odd(10);
+    expect(actual).toBe(expected);
+  });
+
 });
